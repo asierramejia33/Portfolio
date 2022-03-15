@@ -1,57 +1,235 @@
+/*Comment: Universal Selector*/
+
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
+
+.flexbox-container {
+    display: flex;
+}
+
+.flexbox-item1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexbox-item2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexbox-container-lr {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.flexbox-left {
+    width: 15%;
+}
+
+.flexbox-right {
+    border-left: 3px solid darkblue;
+    margin-left: 15px;
+    padding-left: 15px;
+}
+
+
+/*Comment: Body Styling*/
 
 body {
-  font-family: Arial;
-  margin: 0;
-}
-
-header {
-  padding: 60px;
-  text-align: center;
-  background: #13293d;
-  color: #fff;
-}
-
-.card {
-  border-style: solid;
-  border-width: 1px;
-  padding: 10px;
-  float: left;
-  width: 25%;
-}
-
-.card header {
-  padding: 20px;
-}
-
-.card p {
-  text-align: center;
-}
-
-.card img {
-  width: 100%;
-}
-
-/* Cards are split into two columns at 992px or smaller */
-@media screen and (max-width: 992px) {
-  .card {
-    width: 50%;
-  }
-  /* Change the header color */
-  header {
-    background: #772014;
-  }
-}
-
-/* Cards are stacked on top of each other at 768px or smaller */
-@media screen and (max-width: 768px) {
-  .card {
+    background-color: #d9dcd6;
     width: 100%;
-  }
-  /* Change the header color */
-  header {
-    background: #8ac4ff;
-  }
+    margin: 0px;
+}
+
+
+/*Comment: Header Styling*/
+
+.About_Me {
+    padding: 20px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    background-color: rgb(211, 211, 211);
+    color: #0a2634;
+}
+
+.div-About_Me {
+    font-size: 14px;
+    text-align: Left;
+}
+
+.img_horiseon {}
+
+.body-header {
+    padding: 20px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    background-color: #102b58;
+    color: #0a2634;
+}
+
+.article {
+    padding: 20px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    color: #0a2634;
+    background-image: url("../images/background_article.jpg");
+    background-size: 25%;
+    text-align: right;
+}
+
+
+/*Comment: Header Heading h1 element selector*/
+
+h1 {
+    display: inline-block;
+    font-size: 42px;
+    font-family: 'Brush Script MT', cursive;
+    background-color: #41a5d9;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/*Comment: Content Heading h2 element Selector*/
+
+h2 {
+    font-size: 36px;
+    text-align: right;
+}
+
+
+/*Comment: Aside Heading h3 element selector*/
+
+h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+/*Comment: Footer Heading h4 element selector*/
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    display: inline-block;
+    font-size: 42px;
+    font-family: 'Brush Script MT', cursive;
+    background-color: #41a5d9;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    /* 5. changed font size 20-->18*/
+    font-size: 18px;
+}
+
+
+/*Comment: ul style in nav element*/
+
+nav ul {
+    list-style-type: none;
+}
+
+
+/*Comment: ul list style in nav element*/
+
+nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+
+/*Comment: anchor style*/
+
+a {
+    color: #41a5d9;
+}
+
+
+/* unvisited link */
+
+a:link {
+    color: #41a5d9;
+    text-decoration: underline;
+}
+
+
+/* visited link 
+
+a:visited {
+    color: rgb(78, 161, 160);
+}
+*/
+
+
+/* mouse over link */
+
+a:hover {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+
+/*Comment: paragraph style*/
+
+p {
+    font-size: 16px;
+    float: center;
+    border-left: #0a2634;
+}
+
+
+/*Comment: Content class Styling*/
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+
+/*Comment: Content-div class styling*/
+
+.content-div {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+
+/*Comment: Content img class selector - Left"*/
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+    max-height: 200px;
+}
+
+
+/*Comment: Content img class selector - Right"*/
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+    max-height: 200px;
+}
+
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    text-align: center;
 }
